@@ -31,9 +31,45 @@ function crear_devindry_portafolio() {
             'public' => true,
             'menu_position' => 15,
             'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
-            'taxonomies' => array( '' ),
+            'taxonomies' => array( 'servicios' ),
             'menu_icon' => plugins_url( 'images/image.png', __FILE__ ),
             'has_archive' => true
         )
     );
+}
+add_action( 'init', 'crear_cat_servicios' );
+function crear_cat_servicios() {
+	// create a new taxonomy
+	register_taxonomy(
+		'servicios',
+		'dev_portafolio',
+		array(
+			'label' => __( 'Servicios' ),
+			'rewrite' => array( 'slug' => 'servicios' ),
+			'capabilities' => array(
+				'assign_terms' => 'edit_guides',
+				'edit_terms' => 'publish_guides'
+			)
+		)
+	);
+}
+add_action( 'init', 'crear_tag_seccion_servicios' );
+function crear_tag_seccion_servicios() {
+	// create a new tag
+	register_taxonomy(
+		'seccion_servicios',
+		'dev_portafolio',
+		array(		
+			'hierarchical' => false,	
+			'label' => __( 'Seccion' ),
+			'rewrite' => array( 'slug' => 'seccion' ),
+			'capabilities' => array(
+				'assign_terms' => 'edit_guides',
+				'edit_terms' => 'publish_guides'
+			)
+			
+		)
+	);
+}
+
 ?>
