@@ -1,0 +1,14 @@
+/*
+Theme Name: 2015 Devindry Theme
+Theme URI: empackgraphics.com
+Description: Devindry - _tk Child Theme
+Author: Devindry
+Template: _tk-master
+*/
+
+@import url('../_tk-master/style.css');
+
+/* Main styles */
+body {
+    background: red;
+}
