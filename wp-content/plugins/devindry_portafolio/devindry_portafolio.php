@@ -63,6 +63,7 @@ function crear_cat_servicios() {
 		array(
 			'label' => 'Servicios',
 			'labels' => $labels1,
+			'hierarchical' => true,
 			'rewrite' => array( 'slug' => 'servicios' ),
 			'capabilities' => array(
 				'assign_terms' => true,				
