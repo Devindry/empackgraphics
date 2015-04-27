@@ -9,6 +9,73 @@ Template: _tk-master
 @import url('../_tk-master/style.css');
 
 /* Main styles */
-body {
-    background: red;
+/* Imagenes de fondo para cada seccion*/
+#inicio.container-fluid{background:url(assets/empack-bg.jpg) no-repeat center; background-size: 100% 100%}
+#inicio-triangulo.container-fluid{background:url(assets/bg_triangulo_rojo.png) no-repeat center; background-size: 100% 100%}
+#inicio.container-fluid{}
+#inicio.container-fluid{}
+#inicio.container-fluid{}
+
+/* Barra de navegacion */
+.site-navigation{position:absolute}
+.navbar-nav{float:right}
+.navbar-default{
+	background-color:transparent;
+	border-color:transparent;
+}
+.site-navigation .container{padding:0}
+.navbar-default{margin:0}
+
+
+/* Flechas de los li del menu principal */
+#main-menu li.menu-item-31{
+	list-style: none;
+	background: url(assets/green-icon.png) no-repeat center right;  
+	padding-right: 10px;
+}
+#main-menu li.menu-item-28{
+	list-style: none;
+	background: url(assets/blue-icon.png) no-repeat center right; 
+	padding-right: 10px;
+}
+#main-menu li.menu-item-30{
+	list-style: none;
+	background: url(assets/yellow-icon.png) no-repeat center right; 
+	padding-right: 10px;
+}
+#main-menu li.menu-item-27{
+	list-style: none;
+	background: url(assets/orange-icon.png) no-repeat center right; 
+	padding-right: 10px;
+}
+#main-menu li.menu-item-29{
+	list-style: none;
+	background: url(assets/red-icon.png) no-repeat center right; 
+	padding-right: 10px;
+}
+	
+	/*main content */
+
+.main-content{margin-top:50px}
+
+	/* Slider  */
+	
+.home-slider-fix{
+	top:-75px;
+	z-index:0;
+	position:relative;
+	float:left;
+}
+.metaslider .caption-wrap {
+    bottom: 0;
+    color: white;
+    display: block;
+    font-size: 42pt;
+    left: 45%;
+    line-height: 1.4em;
+    margin: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 205px;
+    width: 66%;
 }
