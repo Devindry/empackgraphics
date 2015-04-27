@@ -17,8 +17,6 @@ Template: _tk-master
 #inicio.container-fluid{}
 
 /* Barra de navegacion */
-.site-navigation{position:absolute}
-.navbar-nav{float:right}
 .navbar-default{
 	background-color:transparent;
 	border-color:transparent;
