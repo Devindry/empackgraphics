@@ -17,6 +17,7 @@ Template: _tk-master
 #inicio.container-fluid{}
 
 /* Barra de navegacion */
+.navbar-nav{float:right}
 .navbar-default{
 	background-color:transparent;
 	border-color:transparent;
@@ -52,18 +53,8 @@ Template: _tk-master
 	padding-right: 10px;
 }
 	
-	/*main content */
-
-.main-content{margin-top:50px}
-
 	/* Slider  */
 	
-.home-slider-fix{
-	top:-75px;
-	z-index:0;
-	position:relative;
-	float:left;
-}
 .metaslider .caption-wrap {
     bottom: 0;
     color: white;
