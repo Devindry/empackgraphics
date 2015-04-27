@@ -77,46 +77,6 @@ function crear_cat_servicios() {
 }
 
 
-add_action( 'init', 'crear_tag_seccion_servicios' );
-$labels = array(
-	'name' => __( 'Secciones', 'taxonomy general name' ),
-	'singular_name' => __( 'Seccion', 'taxonomy singular name' ),
-	'search_items' =>  __( 'Buscar Secciones' ),
-	'popular_items' => __( 'Secciones populares' ),
-	'all_items' => __( 'Todos las secciones' ),
-	'parent_item' => null,
-	'parent_item_colon' => null,
-	'edit_item' => __( 'Editar Seccione' ),
-	'update_item' => __( 'Actualizar Seccion' ),
-	'add_new_item' => __( 'Añadir nuevo Seccion' ),
-	'new_item_name' => __( 'Nombre del nuevo Seccion' ),
-	'separate_items_with_commas' => __( 'Separar Secciones por comas' ),
-	'add_or_remove_items' => __( 'Añadir o eliminar Secciones' ),
-	'choose_from_most_used' => __( 'Escoger entre los Secciones más utilizados' )
-);
-function crear_tag_seccion_servicios() {
-	// create a new tag
-	register_taxonomy(
-		'seccion_servicios',
-		'dev_portafolio',
-		array(		
-			'label' => 'Secciones',
-			'hierarchical' => false,	
-			'labels' => $labels,
-			'rewrite' => array( 'slug' => 'seccion' ),
-			'capabilities' => array(
-				'assign_terms' => true,				
-				'manage_terms' => true,
-				'edit_terms' => true,
-				'delete_terms' => true,
-				'assign_terms' => true,
-			),
-			'show_admin_column' => true,
-			'update_count_callback' => '_update_post_term_count',
-			'show_ui' => true,			
-		)
-	);
-}
 
 
 ?>
