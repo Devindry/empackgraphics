@@ -68,3 +68,40 @@ Template: _tk-master
     top: 205px;
     width: 66%;
 }
+
+.flex-control-paging li a {
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3) inset;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+#content .metaslider ol{
+	/*margin: 0 0 0 44% !important;*/
+	position:relative;
+	/*float:left;*/
+	left:215px;
+	top:-210px;
+	z-index:500;
+}
+
+
+/* footer */
+.site-footer{
+	background-color:#fff;
+	width:100%;
+	-moz-opacity: 0.70;
+	-khtml-opacity: 0.70;
+	opacity: 0.70;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+	filter:alpha(opacity=70);
+	height:45px;
+	line-height:45px
+	}
+.credits-footer{
+	font-weight:600;
+	}
+.copyright{
+	font-style:italic;
+	}
