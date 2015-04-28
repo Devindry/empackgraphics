@@ -66,7 +66,7 @@
 						</button>
 	
 						<!-- Your site title as branding in the menu -->
-						<img src = "http://localhost/empackgraphics/wp-content/themes/devindrytheme/assets/empack-logo.png"/>
+						<img src = "http://localhost:8080/empackgraphics/wp-content/themes/devindrytheme/assets/empack-logo.png"/>
 					</div>
 
 					<!-- The WordPress Menu goes here -->
