@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-04-2015 a las 04:02:33
+-- Tiempo de generación: 28-04-2015 a las 04:17:49
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
 
@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=298 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=299 ;
 
 --
 -- Volcado de datos para la tabla `wp_options`
@@ -248,12 +248,11 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (287, '_transient_feed_mod_b9388c83948825c1edaef0d856b7b109', '1430179897', 'no'),
 (288, '_transient_timeout_dash_4077549d03da2e451c8b5f002294ff51', '1430223098', 'no'),
 (289, '_transient_dash_4077549d03da2e451c8b5f002294ff51', '<div class="rss-widget"><p><strong>Error en el RSS:</strong> WP HTTP Error: Failed to connect to wordpress.org port 80: Timed out</p></div><div class="rss-widget"><ul><li><a class=''rsswidget'' href=''http://wptavern.com/poll-how-often-do-you-read-a-wordpress-plugins-changelog-before-updating''>WPTavern: Poll: How Often Do You Read a WordPress Plugin’s Changelog Before Updating?</a></li><li><a class=''rsswidget'' href=''http://wptavern.com/wordpress-4-2-1-released-to-patch-comment-exploit-vulnerability''>WPTavern: WordPress 4.2.1 Released to Patch Comment Exploit Vulnerability</a></li><li><a class=''rsswidget'' href=''http://ma.tt/2015/04/cell-phones-cancer/''>Matt: Cell Phones &amp; Cancer</a></li></ul></div><div class="rss-widget"><ul><li class=''dashboard-news-plugin''><span>Plugin popular:</span> <a href=''https://wordpress.org/plugins/updraftplus/'' class=''dashboard-news-plugin-link''>UpdraftPlus Backup and Restoration</a>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=updraftplus&amp;_wpnonce=bad4cf4fe6&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''UpdraftPlus Backup and Restoration''>Instalar</a>)</span></li></ul></div>', 'no'),
-(290, '_transient_is_multi_author', '0', 'yes'),
-(291, '_transient_all_the_cool_cats', '2', 'yes'),
 (294, '_site_transient_timeout_theme_roots', '1430184793', 'yes'),
 (295, '_site_transient_theme_roots', 'a:5:{s:10:"_tk-master";s:7:"/themes";s:13:"devindrytheme";s:7:"/themes";s:13:"twentyfifteen";s:7:"/themes";s:14:"twentyfourteen";s:7:"/themes";s:14:"twentythirteen";s:7:"/themes";}', 'yes'),
 (296, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1430183017;s:7:"checked";a:5:{s:10:"_tk-master";s:5:"1.1.9";s:13:"devindrytheme";s:0:"";s:13:"twentyfifteen";s:3:"1.0";s:14:"twentyfourteen";s:3:"1.3";s:14:"twentythirteen";s:3:"1.4";}s:8:"response";a:3:{s:13:"twentyfifteen";a:4:{s:5:"theme";s:13:"twentyfifteen";s:11:"new_version";s:3:"1.1";s:3:"url";s:43:"https://wordpress.org/themes/twentyfifteen/";s:7:"package";s:59:"https://downloads.wordpress.org/theme/twentyfifteen.1.1.zip";}s:14:"twentyfourteen";a:4:{s:5:"theme";s:14:"twentyfourteen";s:11:"new_version";s:3:"1.4";s:3:"url";s:44:"https://wordpress.org/themes/twentyfourteen/";s:7:"package";s:60:"https://downloads.wordpress.org/theme/twentyfourteen.1.4.zip";}s:14:"twentythirteen";a:4:{s:5:"theme";s:14:"twentythirteen";s:11:"new_version";s:3:"1.5";s:3:"url";s:44:"https://wordpress.org/themes/twentythirteen/";s:7:"package";s:60:"https://downloads.wordpress.org/theme/twentythirteen.1.5.zip";}}s:12:"translations";a:0:{}}', 'yes'),
-(297, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1430183017;s:8:"response";a:1:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.1.1";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.1.zip";}}s:12:"translations";a:0:{}s:9:"no_update";a:2:{s:9:"hello.php";O:8:"stdClass":6:{s:2:"id";s:4:"3564";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";}s:23:"ml-slider/ml-slider.php";O:8:"stdClass":6:{s:2:"id";s:5:"38583";s:4:"slug";s:9:"ml-slider";s:6:"plugin";s:23:"ml-slider/ml-slider.php";s:11:"new_version";s:5:"3.3.2";s:3:"url";s:40:"https://wordpress.org/plugins/ml-slider/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/ml-slider.3.3.2.zip";}}}', 'yes');
+(297, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1430183017;s:8:"response";a:1:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.1.1";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.1.zip";}}s:12:"translations";a:0:{}s:9:"no_update";a:2:{s:9:"hello.php";O:8:"stdClass":6:{s:2:"id";s:4:"3564";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";}s:23:"ml-slider/ml-slider.php";O:8:"stdClass":6:{s:2:"id";s:5:"38583";s:4:"slug";s:9:"ml-slider";s:6:"plugin";s:23:"ml-slider/ml-slider.php";s:11:"new_version";s:5:"3.3.2";s:3:"url";s:40:"https://wordpress.org/plugins/ml-slider/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/ml-slider.3.3.2.zip";}}}', 'yes'),
+(298, '_transient_is_multi_author', '0', 'yes');
 
 -- --------------------------------------------------------
 
@@ -269,7 +268,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=161 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=173 ;
 
 --
 -- Volcado de datos para la tabla `wp_postmeta`
@@ -386,7 +385,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (129, 36, '_menu_item_orphaned', '1430078338'),
 (131, 38, '_edit_last', '1'),
 (132, 38, '_edit_lock', '1430093798:1'),
-(135, 40, 'ml-slider_settings', 'a:35:{s:4:"type";s:4:"flex";s:6:"random";s:5:"false";s:8:"cssClass";s:0:"";s:8:"printCss";s:4:"true";s:7:"printJs";s:4:"true";s:5:"width";s:4:"1056";s:6:"height";s:3:"606";s:3:"spw";i:7;s:3:"sph";i:5;s:5:"delay";s:4:"3000";s:6:"sDelay";i:30;s:7:"opacity";d:0.69999999999999996;s:10:"titleSpeed";i:500;s:6:"effect";s:4:"fade";s:10:"navigation";s:4:"true";s:5:"links";s:4:"true";s:10:"hoverPause";s:4:"true";s:5:"theme";s:7:"default";s:9:"direction";s:10:"horizontal";s:7:"reverse";s:5:"false";s:14:"animationSpeed";s:3:"600";s:8:"prevText";s:1:"<";s:8:"nextText";s:1:">";s:6:"slices";i:15;s:6:"center";s:5:"false";s:9:"smartCrop";s:4:"true";s:12:"carouselMode";s:5:"false";s:14:"carouselMargin";s:1:"5";s:6:"easing";s:6:"linear";s:8:"autoPlay";s:4:"true";s:11:"thumb_width";i:150;s:12:"thumb_height";i:100;s:9:"fullWidth";s:5:"false";s:10:"noConflict";s:4:"true";s:12:"smoothHeight";s:5:"false";}'),
+(135, 40, 'ml-slider_settings', 'a:35:{s:4:"type";s:4:"flex";s:6:"random";s:5:"false";s:8:"cssClass";s:0:"";s:8:"printCss";s:4:"true";s:7:"printJs";s:4:"true";s:5:"width";s:4:"1062";s:6:"height";s:3:"708";s:3:"spw";i:7;s:3:"sph";i:5;s:5:"delay";s:4:"3000";s:6:"sDelay";i:30;s:7:"opacity";d:0.69999999999999996;s:10:"titleSpeed";i:500;s:6:"effect";s:4:"fade";s:10:"navigation";s:4:"true";s:5:"links";s:4:"true";s:10:"hoverPause";s:4:"true";s:5:"theme";s:7:"default";s:9:"direction";s:10:"horizontal";s:7:"reverse";s:5:"false";s:14:"animationSpeed";s:3:"600";s:8:"prevText";s:1:"<";s:8:"nextText";s:1:">";s:6:"slices";i:15;s:6:"center";s:5:"false";s:9:"smartCrop";s:4:"true";s:12:"carouselMode";s:5:"false";s:14:"carouselMargin";s:1:"5";s:6:"easing";s:6:"linear";s:8:"autoPlay";s:4:"true";s:11:"thumb_width";i:150;s:12:"thumb_height";i:100;s:9:"fullWidth";s:5:"false";s:10:"noConflict";s:4:"true";s:12:"smoothHeight";s:5:"false";}'),
 (136, 41, '_edit_last', '1'),
 (138, 41, '_edit_lock', '1430097364:1'),
 (139, 43, '_wp_attached_file', '2015/04/home.jpg'),
@@ -410,7 +409,19 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (157, 51, 'ml-slider_type', 'image'),
 (158, 51, '_wp_attachment_backup_sizes', 'a:1:{s:15:"resized-972x558";a:5:{s:4:"path";s:71:"C:wampwwwempackgraphics/wp-content/uploads/2015/04/1slider1-972x558.png";s:4:"file";s:20:"1slider1-972x558.png";s:5:"width";i:972;s:6:"height";i:558;s:9:"mime-type";s:9:"image/png";}}'),
 (159, 51, 'ml-slider_crop_position', 'center-center'),
-(160, 51, '_wp_attachment_image_alt', '');
+(160, 51, '_wp_attachment_image_alt', ''),
+(161, 52, '_wp_attached_file', '2015/04/slide-1.png'),
+(162, 52, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:1062;s:6:"height";i:708;s:4:"file";s:19:"2015/04/slide-1.png";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:19:"slide-1-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:19:"slide-1-300x200.png";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:9:"image/png";}s:5:"large";a:4:{s:4:"file";s:20:"slide-1-1024x683.png";s:5:"width";i:1024;s:6:"height";i:683;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}'),
+(163, 52, 'ml-slider_type', 'image'),
+(164, 52, '_wp_attachment_backup_sizes', 'a:1:{s:16:"resized-1056x606";a:5:{s:4:"path";s:71:"C:wampwwwempackgraphics/wp-content/uploads/2015/04/slide-1-1056x606.png";s:4:"file";s:20:"slide-1-1056x606.png";s:5:"width";i:1056;s:6:"height";i:606;s:9:"mime-type";s:9:"image/png";}}'),
+(165, 53, '_wp_attached_file', '2015/04/slide-2.png'),
+(166, 53, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:1062;s:6:"height";i:708;s:4:"file";s:19:"2015/04/slide-2.png";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:19:"slide-2-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:19:"slide-2-300x200.png";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:9:"image/png";}s:5:"large";a:4:{s:4:"file";s:20:"slide-2-1024x683.png";s:5:"width";i:1024;s:6:"height";i:683;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}'),
+(167, 53, 'ml-slider_type', 'image'),
+(168, 53, '_wp_attachment_backup_sizes', 'a:1:{s:16:"resized-1056x606";a:5:{s:4:"path";s:71:"C:wampwwwempackgraphics/wp-content/uploads/2015/04/slide-2-1056x606.png";s:4:"file";s:20:"slide-2-1056x606.png";s:5:"width";i:1056;s:6:"height";i:606;s:9:"mime-type";s:9:"image/png";}}'),
+(169, 52, 'ml-slider_crop_position', 'center-center'),
+(170, 52, '_wp_attachment_image_alt', ''),
+(171, 53, 'ml-slider_crop_position', 'center-center'),
+(172, 53, '_wp_attachment_image_alt', '');
 
 -- --------------------------------------------------------
 
@@ -447,7 +458,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=52 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=54 ;
 
 --
 -- Volcado de datos para la tabla `wp_posts`
@@ -490,7 +501,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (36, 1, '2015-04-26 13:58:57', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'open', 'open', '', '', '', '', '2015-04-26 13:58:57', '0000-00-00 00:00:00', '', 0, 'http://localhost:8080/empackgraphics/?p=36', 1, 'nav_menu_item', '', 0),
 (37, 1, '2015-04-26 17:59:05', '2015-04-26 23:59:05', '', 'QUIENES SOMOS', '', 'inherit', 'open', 'open', '', '16-revision-v1', '', '', '2015-04-26 17:59:05', '2015-04-26 23:59:05', '', 16, 'http://localhost:8080/empackgraphics/?p=37', 0, 'revision', '', 0),
 (38, 1, '2015-04-26 18:18:41', '2015-04-27 00:18:41', '', 'Botella', '', 'publish', 'closed', 'closed', '', 'botella', '', '', '2015-04-26 18:18:41', '2015-04-27 00:18:41', '', 0, 'http://localhost:8080/empackgraphics/?post_type=dev_portafolio&#038;p=38', 0, 'dev_portafolio', '', 0),
-(40, 1, '2015-04-26 18:21:46', '2015-04-27 00:21:46', '', 'New Slider', '', 'publish', 'open', 'open', '', 'new-slider', '', '', '2015-04-27 18:12:25', '2015-04-28 00:12:25', '', 0, 'http://localhost:8080/empackgraphics/?post_type=ml-slider&#038;p=40', 0, 'ml-slider', '', 0),
+(40, 1, '2015-04-26 18:21:46', '2015-04-27 00:21:46', '', 'New Slider', '', 'publish', 'open', 'open', '', 'new-slider', '', '', '2015-04-27 20:12:31', '2015-04-28 02:12:31', '', 0, 'http://localhost:8080/empackgraphics/?post_type=ml-slider&#038;p=40', 0, 'ml-slider', '', 0),
 (41, 1, '2015-04-26 19:06:58', '2015-04-27 01:06:58', '', 'Bote', '', 'publish', 'open', 'open', '', 'bote', '', '', '2015-04-26 19:06:58', '2015-04-27 01:06:58', '', 0, 'http://localhost:8080/empackgraphics/?p=41', 0, 'post', '', 0),
 (42, 1, '2015-04-26 19:06:58', '2015-04-27 01:06:58', '', 'Bote', '', 'inherit', 'open', 'open', '', '41-revision-v1', '', '', '2015-04-26 19:06:58', '2015-04-27 01:06:58', '', 41, 'http://localhost:8080/empackgraphics/?p=42', 0, 'revision', '', 0),
 (43, 1, '2015-04-26 19:07:53', '2015-04-27 01:07:53', '', 'home', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at interdum felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque imperdiet est mauris, sed molestie lectus posuere quis. Nullam vehicula bibendum egestas. Nunc ac turpis molestie, ultricies quam nec, lacinia dui. Fusce vitae dui id lacus malesuada lacinia. Suspendisse eleifend faucibus sem eget tempor. Nullam fermentum lacus vitae lorem interdum placerat. Etiam metus augue, facilisis id leo vitae, placerat viverra augue.', 'inherit', 'open', 'open', '', 'home', '', '', '2015-04-26 22:29:32', '2015-04-27 04:29:32', '', 0, 'http://localhost:8080/empackgraphics/wp-content/uploads/2015/04/home.jpg', 0, 'attachment', 'image/jpeg', 0),
@@ -501,7 +512,9 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (48, 1, '2015-04-26 21:47:59', '2015-04-27 03:47:59', '', 'INICIO', '', 'inherit', 'open', 'open', '', '44-revision-v1', '', '', '2015-04-26 21:47:59', '2015-04-27 03:47:59', '', 44, 'http://localhost:8080/empackgraphics/?p=48', 0, 'revision', '', 0),
 (49, 1, '2015-04-26 22:28:46', '2015-04-27 04:28:46', '', '1slider', '', 'inherit', 'open', 'open', '', '1slider', '', '', '2015-04-27 18:12:25', '2015-04-28 00:12:25', '', 0, 'http://localhost:8080/empackgraphics/wp-content/uploads/2015/04/1slider.png', 2, 'attachment', 'image/png', 0),
 (50, 1, '2015-04-26 22:30:08', '2015-04-27 04:30:08', '[metaslider id=40]', 'INICIO', '', 'inherit', 'open', 'open', '', '44-revision-v1', '', '', '2015-04-26 22:30:08', '2015-04-27 04:30:08', '', 44, 'http://localhost:8080/empackgraphics/?p=50', 0, 'revision', '', 0),
-(51, 1, '2015-04-26 22:41:38', '2015-04-27 04:41:38', '', '1slider', '', 'inherit', 'open', 'open', '', '1slider-2', '', '', '2015-04-27 18:12:25', '2015-04-28 00:12:25', '', 0, 'http://localhost:8080/empackgraphics/wp-content/uploads/2015/04/1slider1.png', 0, 'attachment', 'image/png', 0);
+(51, 1, '2015-04-26 22:41:38', '2015-04-27 04:41:38', '', '1slider', '', 'inherit', 'open', 'open', '', '1slider-2', '', '', '2015-04-27 18:12:25', '2015-04-28 00:12:25', '', 0, 'http://localhost:8080/empackgraphics/wp-content/uploads/2015/04/1slider1.png', 0, 'attachment', 'image/png', 0),
+(52, 1, '2015-04-27 20:11:08', '2015-04-28 02:11:08', '', 'slide-1', '', 'inherit', 'open', 'open', '', 'slide-1', '', '', '2015-04-27 20:12:31', '2015-04-28 02:12:31', '', 0, 'http://localhost:8080/empackgraphics/wp-content/uploads/2015/04/slide-1.png', 0, 'attachment', 'image/png', 0),
+(53, 1, '2015-04-27 20:12:14', '2015-04-28 02:12:14', '', 'slide-2', '', 'inherit', 'open', 'open', '', 'slide-2', '', '', '2015-04-27 20:12:31', '2015-04-28 02:12:31', '', 0, 'http://localhost:8080/empackgraphics/wp-content/uploads/2015/04/slide-2.png', 1, 'attachment', 'image/png', 0);
 
 -- --------------------------------------------------------
 
@@ -536,8 +549,8 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (38, 3, 0),
 (38, 7, 0),
 (41, 9, 0),
-(49, 8, 0),
-(51, 8, 0);
+(52, 8, 0),
+(53, 8, 0);
 
 -- --------------------------------------------------------
 
