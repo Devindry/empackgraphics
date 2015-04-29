@@ -24,5 +24,5 @@ get_header(); ?>
 
 	<?php endwhile; // end of the loop. ?>
 
-<?php get_sidebar(); ?>
+<?php /*get_sidebar(); G - Me parece que el sidebar no se utilizará hay que revisar */ ?>
 <?php get_footer(); ?>
