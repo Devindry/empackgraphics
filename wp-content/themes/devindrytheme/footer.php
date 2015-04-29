@@ -16,10 +16,19 @@
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
-			<div class="site-footer-inner col-sm-12">
+			<div class="site-footer-inner col-sm-6">
 
 				<div class="site-info">
 					<span class="credits-footer">Empackgraphics Design Group 2015</span> <span class="copyright">Todos los derechos reservados</span>
+				</div><!-- close .site-info -->
+
+			</div>
+			<div class="col-sm-6">
+
+				<div class="social-icons">
+					<a href="https://www.facebook.com/empackgraphics" target="_blank"><img src = "/empackgraphics/wp-content/themes/devindrytheme/assets/fb-icon.png"/></a>
+					<a href="https://www.twitter.com/empackgraphics" target="_blank"><img src = "/empackgraphics/wp-content/themes/devindrytheme/assets/tw-icon.png"/></a>
+					<a href="https://www.linkedin.com/empackgraphics" target="_blank"><img src = "/empackgraphics/wp-content/themes/devindrytheme/assets/in-icon.png"/></a>			
 				</div><!-- close .site-info -->
 
 			</div>

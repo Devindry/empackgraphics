@@ -12,6 +12,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width"/>
 
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 
@@ -25,7 +26,7 @@
 <div class="container-fluid" id="<?php  global $post; $post_slug=$post->post_name; echo $post_slug; ?>">
 <div class="container-fluid" id="<?php  global $post; $post_slug=$post->post_name; echo $post_slug.'-triangulo'; ?>">
 	<?php do_action( 'before' ); ?>
-<?php /*  HECTOR, ESTE BLOQUE BO SE REQUIERE, CON SITE-NAVIGATION ES SUFICIENTE
+<?php /*  H - ESTE BLOQUE NO SE REQUIERE, CON SITE-NAVIGATION ES SUFICIENTE
 <header id="masthead" class="site-header" role="banner">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
@@ -66,7 +67,7 @@
 						</button>
 	
 						<!-- Your site title as branding in the menu -->
-						<img src = "http://localhost:8080/empackgraphics/wp-content/themes/devindrytheme/assets/empack-logo.png"/>
+						<a href="index.php"><img src = "wp-content/themes/devindrytheme/assets/empack-logo.png"/></a>
 					</div>
 
 					<!-- The WordPress Menu goes here -->
