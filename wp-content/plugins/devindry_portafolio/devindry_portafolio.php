@@ -33,7 +33,8 @@ function crear_devindry_portafolio() {
             'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
             'taxonomies' => array( 'servicios' ),
             'menu_icon' => plugins_url( 'images/image.png', __FILE__ ),
-            'has_archive' => true
+            'has_archive' => true,
+			'supports' => array( 'title', 'editor', 'comments', 'excerpt', 'custom-fields', 'thumbnail' ),
         )
     );
 }
