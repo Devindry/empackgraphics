@@ -76,6 +76,48 @@ function crear_cat_servicios() {
 		)
 	);
 }
+//Agregar un campo de imagen a la categoria servicios
+//Tomado de: https://pippinsplugins.com/adding-custom-meta-fields-to-taxonomies/
+function servicios_taxonomy_agregar_campo_imagen() {
+	?>
+	<div class="form-field">
+		<label for="term_meta[custom_term_meta]"><?php _e( 'Imagen', 'servicios' ); ?></label>
+		<input type="text" name="term_meta[custom_term_meta]" id="term_meta[custom_term_meta]" value="">
+		<p class="description"><?php _e( 'Agrega una imagen','pippin' ); ?></p>
+	</div>
+<?php
+}
+function servicios_taxonomy_editar_campo_imagen($term) {
+	$t_id = $term->term_id;
+	$term_meta = get_option( "taxonomy_$t_id" ); ?>
+	<tr class="form-field">
+	<th scope="row" valign="top"><label for="term_meta[custom_term_meta]"><?php _e( 'Imagen', 'pippin' ); ?></label></th>
+		<td>
+			<input type="text" name="term_meta[custom_term_meta]" id="term_meta[custom_term_meta]" value="<?php echo esc_attr( $term_meta['custom_term_meta'] ) ? esc_attr( $term_meta['custom_term_meta'] ) : ''; ?>">
+			<p class="description"><?php _e( 'Agregar Imagen','pippin' ); ?></p>
+		</td>
+	</tr>
+<?php
+}
+function save_taxonomy_servicios_meta( $term_id ) {
+	if ( isset( $_POST['term_meta'] ) ) {
+		$t_id = $term_id;
+		$term_meta = get_option( "taxonomy_$t_id" );
+		$cat_keys = array_keys( $_POST['term_meta'] );
+		foreach ( $cat_keys as $key ) {
+			if ( isset ( $_POST['term_meta'][$key] ) ) {
+				$term_meta[$key] = $_POST['term_meta'][$key];
+			}
+		}
+		// Save the option array.
+		update_option( "taxonomy_$t_id", $term_meta );
+	}
+}  
+add_action( 'servicios_edit_form_fields', 'servicios_taxonomy_editar_campo_imagen', 10, 2 );
+add_action( 'servicios_add_form_fields', 'servicios_taxonomy_agregar_campo_imagen', 10, 2 );
+add_action( 'edited_servicios', 'save_taxonomy_servicios_meta', 10, 2 );  
+add_action( 'create_servicios', 'save_taxonomy_servicios_meta', 10, 2 );
+
 
 
 
