@@ -8,6 +8,12 @@ Template: _tk-master
 
 @import url('../_tk-master/style.css');
 
+/* Main Styles */
+h1 {
+    color: #FFF;
+    font-weight: bold;
+}
+
 /* Background */
 body  > .container-fluid{
 	background:url("assets/empack-bg.jpg") no-repeat scroll center center / 100% 100% rgba(0, 0, 0, 0);
@@ -24,6 +30,10 @@ body  > .container-fluid{
 #servicios-triangulo.container-fluid{
 	background:url("assets/blue-triangles.png") no-repeat scroll center bottom / 100% auto rgba(0, 0, 0, 0);
 	padding: 0;
+}
+#contacto-triangulo.container-fluid{
+    background:url("assets/red-triangles.png") no-repeat scroll center bottom / 100% auto rgba(0, 0, 0, 0);
+    padding: 0;
 }
 
 /* Navbar */
@@ -132,10 +142,9 @@ body  > .container-fluid{
     width: 30px;
 }
 #content .metaslider ol {
+    margin-bottom: 28% !important;
     margin-left: 58% !important;
     margin-right: auto !important;
-    position: relative;
-    top: -285px;
     width: 25%;
     z-index: 2;
 }
@@ -153,15 +162,9 @@ body  > .container-fluid{
 
 /* Footer */
 .site-footer{
-	background-color:#fff;
+	background-color:rgba(250, 250, 250, .7);
 	width:100%;
-	-moz-opacity: 0.70;
-	-khtml-opacity: 0.70;
-	opacity: 0.70;
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
-	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
-	filter:alpha(opacity=70);
-	height:60px;
+	min-height:60px;
 	line-height:45px
 }
 .credits-footer{
@@ -186,7 +189,7 @@ body  > .container-fluid{
     padding: 10px;
 }
 
-/* Servicios Sections */
+/* Servicios Section */
 .grua {
     background: url("assets/grua-icon-s.png") no-repeat scroll 0 5px rgba(0, 0, 0, 0);
     height: 110px;
@@ -234,4 +237,30 @@ body  > .container-fluid{
     cursor: pointer;
     height: 110px;
     width: 110px;
+}
+
+/* Contacto Section */
+.black-bg {
+    background-color: rgba(0, 0, 0, .7);
+}
+.contacto-btn > li {
+    list-style: none;
+    display: inline;
+    background-color: #FFF;
+    padding: 10px;
+    margin-right: 10px;
+}
+.contacto-btn > li:hover {
+    outline: 2px solid red;
+    outline-offset: 5px;
+    cursor: pointer;
+}
+.nav-numbers > li {
+    background-color: #fff;
+    border-radius: 16px;
+    display: inline;
+    list-style: outside none none;
+    margin-right: 5px;
+    padding: 2px 5px;
+    font-weight: bold;
 }
