@@ -239,6 +239,54 @@ body  > .container-fluid{
     width: 110px;
 }
 
+/* Blog Section */
+.seccion-blog-titulo{
+	background:url(assets/orange-circle.png) center no-repeat;
+	width:150px; 
+	height:150px; 
+	color:#fff; 
+	font-weight:800; 
+	font-size:30px; 
+	padding:25% 12%;
+}
+.blog-container{padding:0 300px; /*width:720px; overflow:auto; white-space:nowrap*/}
+.blog-item{padding-top:15px}
+.col-xs-15{/* Fix para hacer 5 columnas */
+    width:20%;
+	margin-bottom:5%
+}
+.single .page-title{
+	display:initial;
+	font-size:40px;
+	font-weight:700;
+	color:black
+}
+.single .autor{
+	text-align:right;
+	color:#fe6613;
+	font-style:italic;
+	
+}
+.single .body-post-container{
+	background-color:#fff;
+	-moz-opacity: 0.70;
+	-khtml-opacity: 0.70;
+	opacity: 0.70;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+	filter:alpha(opacity=70);
+	padding:10px;
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	column-count:2;
+}
+.mas-posts-blog{
+	float:right
+}
+.blog .main-content .container .row{
+	margin-top:25px}
+
+	
 /* Contacto Section */
 .black-bg {
     background-color: rgba(0, 0, 0, .7);
