@@ -24,11 +24,11 @@ body  > .container-fluid{
 	padding: 0;
 }
 #quienes-somos-triangulo.container-fluid{
-	background:url("assets/green-triangles.png") no-repeat scroll center bottom / 100% auto rgba(0, 0, 0, 0);
+	background:url("assets/green-triangles.png") no-repeat scroll center top / 100% auto rgba(0, 0, 0, 0);
 	padding: 0;
 }
 #servicios-triangulo.container-fluid{
-	background:url("assets/blue-triangles.png") no-repeat scroll center bottom / 100% auto rgba(0, 0, 0, 0);
+	background:url("assets/blue-triangles.png") no-repeat scroll center right / 100% auto rgba(0, 0, 0, 0);
 	padding: 0;
 }
 #contacto-triangulo.container-fluid{
