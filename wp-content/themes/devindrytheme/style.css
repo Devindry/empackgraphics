@@ -190,49 +190,80 @@ body  > .container-fluid{
 }
 
 /* Servicios Section */
-.grua {
+#servicios .nosotros-text:nth-child(n+2){display:none;}
+
+.servicios-title{
+    margin-left: 115px;
+	overflow:hidden;
+	float:left;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	white-space:nowrap;
+	width:1%
+}
+
+.servicio-item:hover .servicios-title{
+    overflow: inherit;
+	-webkit-animation-name: hvr-wobble-to-top-right;
+	animation-name: hvr-wobble-to-top-right;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	width:100%;
+}
+
+.grua, .post-22  {
     background: url("assets/grua-icon-s.png") no-repeat scroll 0 5px rgba(0, 0, 0, 0);
     height: 110px;
     width: 110px;
     margin-left: 16%;
 }
-.grua:hover {
+.grua:hover, .post-22:hover {
     background: url("assets/grua-icon-s.png") no-repeat scroll 0 -110px rgba(0, 0, 0, 0);
     cursor: pointer;
     height: 110px;
     width: 110px;
 }
-.pantone {
+.pantone, .post-20 {
     background: url("assets/pantone-icon-s.png") no-repeat scroll 0 5px rgba(0, 0, 0, 0);
     height: 110px;
     width: 110px;
     margin-left: 26%;
 }
-.pantone:hover {
+.pantone:hover, .post-20:hover {
     background: url("assets/pantone-icon-s.png") no-repeat scroll 0 -110px rgba(0, 0, 0, 0);
     cursor: pointer;
     height: 110px;
     width: 110px;
 }
-.bottles {
+.bottles, .post-18 {
     background: url("assets/bottles-icon-s.png") no-repeat scroll 0 5px rgba(0, 0, 0, 0);
     height: 110px;
     width: 110px;
     margin-left: 36%;
 }
-.bottles:hover {
+.bottles:hover, .post-18:hover {
     background: url("assets/bottles-icon-s.png") no-repeat scroll 0 -110px rgba(0, 0, 0, 0);
     cursor: pointer;
     height: 110px;
     width: 110px;
 }
-.a-lines {
+.a-lines, .post-16{
     background: url("assets/a-icon-s.png") no-repeat scroll 0 5px rgba(0, 0, 0, 0);
     height: 110px;
     width: 110px;
     margin-left: 46%;
 }
-.a-lines:hover {
+.a-lines:hover, .post-16:hover {
     background: url("assets/a-icon-s.png") no-repeat scroll 0 -110px rgba(0, 0, 0, 0);
     cursor: pointer;
     height: 110px;
@@ -312,3 +343,7 @@ body  > .container-fluid{
     padding: 2px 5px;
     font-weight: bold;
 }
+
+
+
+
