@@ -36,7 +36,12 @@ body  > .container-fluid{
     padding: 0;
 }
 
+/*Sections */
+section, section > div:first-child{	min-height:680px}
+section > div > div:first-child{padding-top:90px}
+
 /* Navbar */
+.site-navigation{position:fixed; z-index:999999999; margin-left:6.4%}
 .navbar-nav{
 	float:right
 }
@@ -190,7 +195,7 @@ body  > .container-fluid{
 }
 
 /* Servicios Section */
-#servicios .nosotros-text:nth-child(n+2){display:none;}
+#servicios .servicios-text:nth-child(n+2){display:none;}
 
 .servicios-title{
     margin-left: 115px;
@@ -280,19 +285,21 @@ body  > .container-fluid{
 	font-size:30px; 
 	padding:25% 12%;
 }
+#blog .titulo-imagen{Background-color:#fff; padding-left:10px}
 .blog-container{padding:0 300px; /*width:720px; overflow:auto; white-space:nowrap*/}
 .blog-item{padding-top:15px}
 .col-xs-15{/* Fix para hacer 5 columnas */
     width:20%;
 	margin-bottom:5%
 }
-.single .page-title{
+.single .page-title, .blog-title{
 	display:initial;
 	font-size:40px;
 	font-weight:700;
 	color:black
 }
-.single .autor{
+#blog .autor
+.single .autor, #blog .autor{
 	text-align:right;
 	color:#fe6613;
 	font-style:italic;
