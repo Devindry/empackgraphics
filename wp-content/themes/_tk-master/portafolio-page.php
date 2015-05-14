@@ -6,12 +6,13 @@
 ?>
 <link type="text/css" rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.carousel.min.css" />
 <link type="text/css" rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.theme.default.min.css" />
+<link type="text/css" rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css" />
 <script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/owl.carousel.js"></script>
 <script src="http://www.owlcarousel.owlgraphic.com/assets/vendors/jquery.mousewheel.min.js"></script>
 
-	
+	<div class="animated fadeIn" >
 	<?php while ( have_posts() ) : the_post(); ?>
-		<div class="portadolio-stamp"></div>
+		<div class="portadolio-stamp animated bounce"></div>
 		<?php get_template_part( 'content', 'page' ); ?>
 
 		<?php
@@ -23,7 +24,7 @@
 		<div id="newSlider"></div>
 
 	<?php endwhile; // end of the loop. ?>
-
+	</div>
 
 <?php 
 	get_footer(); 
@@ -31,48 +32,55 @@
 
 <script type="text/javascript">
 
+	var $ = jQuery;	
+	/* Remove templete */	
+	$('.nimble-portfolio').removeClass('-skin-default');
+
+	$( ".-item .button-fixed" ).each(function( index ) {
+  		var detailURL = $( this ).attr('href');
+		$(this).parent().parent().parent().find('.itembox a').attr('href', detailURL);
 		
-	/* Remove templete */
-	jQuery('.nimble-portfolio').removeClass('-skin-default');
+	});
 
-	/* Pass all items in groups of 4 */
-	var divs = jQuery(".-item");
-	for(var i = 0; i < divs.length; i+=4) {
-	  divs.slice(i, i+4).wrapAll("<div class='itemOwl'></div>");
+	/* Pass all items in groups of 4 */	
+	var divs = $(".-item");	
+	for(var i = 0; i < divs.length; i+=4) {	  	
+
+	  	divs.slice(i, i+4).wrapAll("<div class='itemOwl'></div>")	
 	}
-
+	
 	/* Clear all classes that are making blokers */
-	jQuery('.-items').addClass('mainOwl');
-	jQuery('.mainOwl > div:last-child').remove();
+	$('.-items').addClass('mainOwl');
+	$('.mainOwl > div:last-child').remove();
 
 	/* Document ready : on click functions */
-	jQuery(document).ready(function(){
+	$(document).ready(function(){
 		
-		jQuery('.-filters a').click(function(){						
+			$('.-filters a').click(function(){						
 
 			//Hide Central Slider
-			jQuery('.mainOwl').hide();
+			$('.mainOwl').hide();
 
 			//Clean new slider ///////////////////////////////////////////////////////////////////////
-			jQuery('#newSlider').empty();
+			$('#newSlider').empty();
 
 			//Copy and paste /////////////////////////////////////////////////////////////////////////
-			jQuery('.mainOwl .-item:not(.hidden)').each(function(){				
-				jQuery(this).css('opacity','1');
-				jQuery(this).clone().appendTo('#newSlider');
+			$('.mainOwl .-item:not(.hidden)').each(function(){				
+				$(this).css('opacity','1');
+				$(this).clone().appendTo('#newSlider');
 			});
 
 			//The four elemets ///////////////////////////////////////////////////////////////////////
-			var divsItem = jQuery("#newSlider .-item");
+			var divsItem = $("#newSlider .-item");
 			for(var i = 0; i < divsItem.length; i+=4) {
-			  divsItem.slice(i, i+4).wrapAll("<div class='itemOwl'></div>");
+			  divsItem.slice(i, i+4).wrapAll("<div class='itemOwl'></div>");	  
 			}						
 			
 			//The Initial Slider //////////////////////////////////////////////////////////////////////
-			var owl = jQuery('#newSlider');
+			var owl = $('#newSlider');
 			owl.owlCarousel({
 		    	items:1,
-		    	nav:true
+		    	nav:false
 			});					
 
 			//Brake and Hack
@@ -80,7 +88,7 @@
 			owl.html(owl.find('.owl-stage-outer').html()).removeClass('owl-loaded');
 			owl.owlCarousel({
 			    items:1,
-		    	nav:true
+		    	nav:false
 			});
 			owl.on('mousewheel', '.owl-stage', function (e) {
 			    if (e.deltaY>0) {
@@ -94,10 +102,10 @@
 		});//All cloning carousel stuff
 
 		/* Carousel */				
-		var owl = jQuery('.mainOwl');	
+		var owl = $('.mainOwl');	
 		owl.owlCarousel({
 		    items:1,
-		    nav:true
+		    nav:false
 		});					
 		owl.on('mousewheel', '.owl-stage', function (e) {
 		    if (e.deltaY>0) {
@@ -110,6 +118,66 @@
 	});	
 </script>
 <style type="text/css">
+.-links,
+.edit-link{
+	display: none
+}
+/*DOTS TRANSFORM*/
+body .owl-theme .owl-dots .owl-dot span{
+	  width: 107px;
+  height: 12px;
+  margin: 25px 3px;
+   -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+body .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+	background-color: #ffec0a  
+}
+
+	.itembox a{
+		position: relative;
+	}
+	.itembox:hover{
+		cursor: pointer;
+		  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+	}
+	.itembox:hover .genericon.genericon-zoom{
+		opacity: .8;
+		  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+	}
+	.genericon.genericon-zoom {
+
+
+		  width: 400px;
+		  height: 340px;
+		  position: absolute;
+		  opacity: 1;
+		  background: #000;
+		  display: block;
+		  z-index: 99999;
+		  color: white;
+		  padding-top: 50%;
+		  opacity: 0;
+		  text-decoration: none;
+		  padding-left: 20%;
+		  font-size: 30px;
+		  border: solid 1px red;
+		  padding-right: 28%;
+		  font-weight: bold;
+		  font-family: helvetica;
+
+
+	}
+	.genericon.genericon-zoom:before{
+		display: none
+	}
 
 	/* OWL SLIDER OVERRIDES */
 	.container-fluid{
@@ -122,14 +190,15 @@
 		overflow: visible;
 	}
 	.owl-stage-outer .owl-item{
-		opacity: .4;
+		opacity: .4;		 
 	}
 	.owl-stage-outer .owl-item.active{
 		opacity: 1;
 	}
 	.owl-stage .owl-item .itemOwl .-item {
-	  width: 50%;
+	  width: 46%;
 	  float: left;
+
 	}
 	.hentry{
 		margin: 0;
@@ -143,16 +212,20 @@
 	/* TEMPLETE STYLES */
 	.owl-stage-outer .owl-item .-item{
 		width: 50%;
-		height:300px;
+		height:280px;
 		float: left;		
-		overflow: hidden;		
+		overflow: hidden;
+		margin-left:0 !important;
 		/*
 		-webkit-clip-path: polygon(10% 50%, 90% 1%, 90% 50%, 10% 100%);
 		clip-path: polygon(10% 50%, 90% 1%, 90% 50%, 10% 100%); */
-		-webkit-clip-path: polygon(0 50%, 100% 0, 100% 50%, 0 100%);
-		clip-path: polygon(0 50%, 100% 0, 100% 50%, 0 100%);
+		-webkit-clip-path:polygon(11% 50%, 100% 4%, 100% 51%, 11% 100%);
+		clip-path: polygon(11% 50%, 100% 4%, 100% 51%, 11% 100%);
 		/*box-shadow: 10px 10px 10px 10px #000;*/
+		/*polygon(11% 50%, 94% 3%, 94% 51%, 11% 100%)*/
+
 	}
+
 	.owl-stage-outer .owl-item .-item img{
 		  margin-top: -25%;
 	}
@@ -165,6 +238,7 @@
 	  	margin-top: -20%;
 	  	width: 480px;
 	  	max-width: inherit;
-	  	margin-left: -2%;
+	  	margin-left: -10%;
 	}
 </style>
+
