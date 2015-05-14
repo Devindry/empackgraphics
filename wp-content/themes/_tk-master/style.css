@@ -44,6 +44,7 @@ Credits:
 /* This is a small security for too long strings titles */
 body {
 	word-wrap: break-word;
+	
 }
 
 /* Alignment */
@@ -257,3 +258,243 @@ display: block;
 */
 
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
+
+/* PORTAFOLIO * Por verificar
+article .page-title {
+	display: block;
+}
+.navbar-header a{
+	background: url('assets/empack-logo.png');
+  	display: block;
+  	width: 300px;
+  	height: 83px;
+}
+
+/* portafolioDetail Triangle image *
+.y-triangle{
+	background: url('assets/yellow-triangle-1.jpg');	  
+	display: block;
+	width: 300px;
+	height: 83px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+/* Slider*
+#portafolioDetail.taxDetail .entry-meta,
+.navbar-header a img,
+article footer.entry-meta{
+	display: none;
+}
+/*Slides*
+#portafolioDetail.tax .rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 7.5% 0; 
+}
+#portafolioDetail.tax .rslides h1.page-title a{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 60px
+}
+#portafolioDetail.tax .rslides article{		
+	width: 50%;	
+	vertical-align: middle;
+	float: left;	
+}
+/* Slides Image *
+#portafolioDetail.tax .rslides .f-image{	
+	float: right;			
+	width: 40%;
+}
+#portafolioDetail.tax .rslides .f-image img{	  
+  	margin: 0 auto;
+  	display: block
+}
+#portafolioDetail.tax #portafolioDetail.tax.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+#portafolioDetail.tax .rslides h1.page-title a:hover{
+ 	text-decoration: none;
+ 	cursor: default;
+}
+#portafolioDetail.tax .rslides .entry-summary{
+	background-color:rgba(255,255,255,.7);
+	padding: 2% 2% 5% 2%;
+	line-height: 16px;
+	font-size: 12px
+}
+#portafolioDetail.tax #portafolioDetail.tax.rslides li h1
+#portafolioDetail.tax.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+#portafolioDetail.tax.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
+}
+
+/*Slider dots¨*
+.rslides_tabs.rslides1_tabs{
+	overflow: hidden;
+	float: left;	
+	margin:2px;
+	padding: 0
+}
+  .rslides_tabs.rslides1_tabs li{
+  	text-indent: -9999px;
+  	float:left;
+	padding:3px;
+  }
+  .rslides_tabs.rslides1_tabs li a{
+  	background-color: black;
+  	width: 8px;
+  	height: 8px;
+  	border-radius: 100%;
+  	display: block;  	
+  }
+li.rslides_here{
+	background-color:  #fff;
+	border-radius: 100%;
+}
+/* Slider Next Prev*
+.rslides_nav.rslides1_nav.prev,
+.rslides_nav.rslides1_nav.next{
+	background-image: url('assets/arrow-left.png');
+	float:left;
+	width: 13px;
+  	height: 18px;
+	text-indent: -9999px
+}
+.rslides_nav.rslides1_nav.next{
+	background-image: url('assets/arrow-right.png');
+}
+
+/* Controllers Wrapper *
+.custom-controlers-wrapper #back{
+	background-color: #231f20;
+	color: #fff;
+	float: right;
+	border: none;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: bold
+}
+.custom-controlers-wrapper a small{
+	text-transform: initial;
+	font-weight: lighter;
+}
+.custom-controlers{
+	float: right;
+	margin:8% 0
+}
+.control-wrapper{
+	display: block;
+	overflow: hidden;	
+}
+
+*/
+.portadolio-stamp{	
+	width: 141px;
+	height: 133px;
+	background: url('assets/portafolio.png');
+	position: absolute;
+	z-index: 9999;
+	top:10%;
+	left: 10%;
+}
+
+/* The filters styles */
+.-filters{
+	position: absolute;
+	right: 10%;
+	z-index: 99999;
+	top:10%;
+}
+.-filters a{
+	height: 90px;
+  	width: 90px;
+  	display: block;
+  	text-indent: -99999px;
+  	background-size: 100%;
+  	background-color: blue;
+  	border-radius:100%;
+  	margin-bottom:10px;
+  	background-position: -1px 4px;
+}
+/* Sericios Icons */
+ 
+.-filters a:first-child {
+  	display: none  
+}
+.-filters a:nth-child(2){
+  background: url('assets/servicio1.png');
+  background-position: -1px 4px; 
+  background-repeat: no-repeat;
+}
+.-filters a:nth-child(2):hover,
+.-filters a:nth-child(3):hover,
+.-filters a:nth-child(4):hover,
+.-filters a:nth-child(5):hover,
+.-filters a:nth-child(6):hover,
+.-filters a.-filter.active{
+	background-position: 0px -105px;
+	  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+.-filters a:nth-child(3){
+  background: url('assets/servicio2.png');
+  background-position: -1px 4px; 
+  background-repeat: no-repeat;
+}
+.-filters a:nth-child(4){
+  background: url('assets/servicio3.png');
+  background-position: -1px 4px; 
+  background-repeat: no-repeat;
+}
+.-filters a:nth-child(5){
+	background: url('assets/servicio5.png');  
+}
+.-filters a:nth-child(6){
+	background: url('assets/servicio6.png');  
+}
+.-filters a:nth-child(7){
+	background: url('assets/servicio7.png');  
+}
+.-filters a:nth-child(8){
+	background: url('assets/servicio8.png');  
+}
+
+/* PORTAFOLIO DETAIL  OK */
+.y-triangle{
+	background: url('assets/yellow-triangle-1.jpg');
+	background-repeat: no-repeat;
+}
+#content .flex-control-paging li a.flex-next,
+#content .flex-control-paging li a.flex-prev{
+	background-image: url('assets/arrow-right.png') !important;
+}
+#content .flex-control-paging li a.flex-next{
+	background-image: url('assets/arrow-left.png') !important;
+}
+
+/* PORTAFOLIO DETAIL  OK */

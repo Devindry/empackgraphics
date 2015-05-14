@@ -57,7 +57,7 @@ function _tk_setup() {
 	 * to change '_tk' to the name of your theme in all the template files
 	*/
 	load_theme_textdomain( '_tk', get_template_directory() . '/languages' );
-
+	add_filter('single_template', create_function('$t', 'foreach( (array) get_the_category() as $cat ) { if ( file_exists(TEMPLATEPATH . "/single-{$cat->term_id}.php") ) return TEMPLATEPATH . "/single-{$cat->term_id}.php"; } return $t;' ));
 	/**
 	 * This theme uses wp_nav_menu() in one location.
 	*/
