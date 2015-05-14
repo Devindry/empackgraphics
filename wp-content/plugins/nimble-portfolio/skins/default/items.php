@@ -8,7 +8,7 @@ $viewproject_text = $skin_options['viewproject-text'];
 $skin_type = $skin_options['skin-type'];
 $skin_cols = $skin_options['column-type'];
 $hover_icon = $skin_options['hover-icon'] ? $skin_options['hover-icon'] : 'zoom';
-$items = $this->getItems();
+$items = $this->getItems(); 
 foreach ($items as $item) {
     $item_atts = array();
     $item_atts['class'] = $item->getFilters($this->taxonomy);
