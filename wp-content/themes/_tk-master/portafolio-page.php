@@ -25,9 +25,7 @@
 <?php 
 	get_footer(); 
 ?>
-
 <script type="text/javascript">
-
 	var $ = jQuery;	
 	/* Remove templete */	
 	$('.nimble-portfolio').removeClass('-skin-default');
