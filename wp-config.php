@@ -19,10 +19,10 @@
 define('DB_NAME', 'empqa');
 
 /** MySQL database username */
-define('DB_USER', 'empadmin');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '8[f972_ZY47U7NW');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

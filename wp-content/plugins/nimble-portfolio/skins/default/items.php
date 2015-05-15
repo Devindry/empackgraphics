@@ -22,12 +22,15 @@ foreach ($items as $item) {
     $item_link = apply_filters('nimble_portfolio_lightbox_link_atts', $item_link, $item, $this);
     ?>
     <div <?php echo NimblePortfolioPlugin::phpvar2htmlatt($item_atts); ?>>
-        <div class="title"><?php echo $item->getTitle(); ?></div>    
+       
         <div class="itembox">
-            <a <?php echo NimblePortfolioPlugin::phpvar2htmlatt($item_link); ?>>
+            <a href="#">
+                <div class="genericon genericon-<?php echo $hover_icon; ?>">
+                    <?php echo $item->getTitle(); ?>
+                </div>
                 <img src="<?php echo $item->getThumbnail('480x480', true); ?>" />
-                <div class="-mask"> </div>
-                <div class="genericon genericon-<?php echo $hover_icon; ?>"></div>
+                
+                
             </a>    
         </div>
         <?php if ($readmore_flag || $viewproject_flag) { ?> 

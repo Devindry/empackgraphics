@@ -4,7 +4,11 @@
 
 /* PORTAFOLIO DETAIL */
 body{
-	overflow: hidden;
+	overflow-x: hidden;
+}
+
+#portafolioDetail{
+  margin-top: 10%;
 }
 .y-triangle{	 
 	display: block;

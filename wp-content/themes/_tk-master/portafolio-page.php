@@ -9,23 +9,19 @@
 <link type="text/css" rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css" />
 <script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/owl.carousel.js"></script>
 <script src="http://www.owlcarousel.owlgraphic.com/assets/vendors/jquery.mousewheel.min.js"></script>
+	<div class="animated fadeIn" id="portafolioTemplete" >
+		<?php while ( have_posts() ) : the_post(); ?>
+			<div class="portadolio-stamp animated bounce"></div>
+			<?php get_template_part( 'content', 'page' ); ?>
 
-	<div class="animated fadeIn" >
-	<?php while ( have_posts() ) : the_post(); ?>
-		<div class="portadolio-stamp animated bounce"></div>
-		<?php get_template_part( 'content', 'page' ); ?>
-
-		<?php
-			// If comments are open or we have at least one comment, load up the comment template
-			if ( comments_open() || '0' != get_comments_number() )
-				comments_template();
-		?>
-
-		<div id="newSlider"></div>
-
-	<?php endwhile; // end of the loop. ?>
+			<?php
+				// If comments are open or we have at least one comment, load up the comment template
+				if ( comments_open() || '0' != get_comments_number() )
+					comments_template();
+			?>
+			<div id="newSlider"></div>
+		<?php endwhile; // end of the loop. ?>
 	</div>
-
 <?php 
 	get_footer(); 
 ?>
@@ -118,6 +114,9 @@
 	});	
 </script>
 <style type="text/css">
+#portafolioTemplete{
+margin-top: 5%;
+}
 .-links,
 .edit-link{
 	display: none
@@ -156,14 +155,14 @@ body .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:ho
 
 
 		  width: 400px;
-		  height: 340px;
+		  height: 540px;
 		  position: absolute;
 		  opacity: 1;
 		  background: #000;
 		  display: block;
 		  z-index: 99999;
 		  color: white;
-		  padding-top: 50%;
+		  padding-top: 58%;
 		  opacity: 0;
 		  text-decoration: none;
 		  padding-left: 20%;
