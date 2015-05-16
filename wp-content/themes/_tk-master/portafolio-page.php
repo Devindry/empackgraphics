@@ -4,8 +4,8 @@
 	*/
 	get_header(); 
 ?>
-<link type="text/css" rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.carousel.min.css" />
-<link type="text/css" rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.theme.default.min.css" />
+
+
 <link type="text/css" rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css" />
 <script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/owl.carousel.js"></script>
 <script src="http://www.owlcarousel.owlgraphic.com/assets/vendors/jquery.mousewheel.min.js"></script>

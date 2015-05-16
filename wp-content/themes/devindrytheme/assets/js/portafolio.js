@@ -1,5 +1,5 @@
-	var $ = jQuery;	
-	/* Remove templete */	
+var $ = jQuery;	
+	 /*Remove templete */	
 	$('.nimble-portfolio').removeClass('-skin-default');
 
 	$( ".-item .button-fixed" ).each(function( index ) {
@@ -20,7 +20,7 @@
 	$('.mainOwl > div:last-child').remove();
 
 	/* Document ready : on click functions */
-	$(document).ready(function(){
+	$(document).ready(function($){
 		
 			$('.-filters a').click(function(){						
 

@@ -11,37 +11,17 @@ function blogThumb( $sizes ) {
 add_action( 'wp_enqueue_scripts', 'add_my_script' );
 /* Funcion para agregar el script jquery en servicios */
 function add_my_script() {
+	wp_enqueue_script('portafolio', get_stylesheet_directory_uri() . '/assets/js/portafolio.js', false, '1.0', true);
 	wp_enqueue_script('hideSections', get_stylesheet_directory_uri() . '/assets/js/hideSections.js');
-	wp_enqueue_script(
-        'jqSelectServiciosSliding', // name your script so that you can attach other scripts and de-register, etc.
-        get_stylesheet_directory_uri() . '/assets/js/jqSelectServiciosSliding.js', // this is the location of your script file
-        array('jquery') // this array lists the scripts upon which your script depends
-    );
-	/*wp_enqueue_script(
-        'owl.carousel', // name your script so that you can attach other scripts and de-register, etc.
-        get_stylesheet_directory_uri() . '/assets/js/owl.carousel.js', // this is the location of your script file
-        array('jquery') // this array lists the scripts upon which your script depends
-    );
-	wp_enqueue_script(
-        'jquery.mousewheel.min', // name your script so that you can attach other scripts and de-register, etc.
-        get_stylesheet_directory_uri() . '/assets/js/jquery.mousewheel.min.js', // this is the location of your script file
-        array('jquery') // this array lists the scripts upon which your script depends
-    );
+	wp_enqueue_script('jqSelectServiciosSliding', get_stylesheet_directory_uri() . '/assets/js/jqSelectServiciosSliding.js');
+	wp_enqueue_script('owl.carousel', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.js');
+	wp_enqueue_script('jquery.mousewheel.min', get_stylesheet_directory_uri() . '/assets/js/jquery.mousewheel.min.js');
 	wp_enqueue_style(
-        'owl.carousel.min', // name your script so that you can attach other scripts and de-register, etc.
-        get_stylesheet_directory_uri() . '/assets/js/owl.carousel.min.css', // this is the location of your script file
-        array('jquery') // this array lists the scripts upon which your script depends
-    );
+        'owl.carousel.min', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.min.css');
 	wp_enqueue_style(
-        'owl.theme.default.min', // name your script so that you can attach other scripts and de-register, etc.
-        get_stylesheet_directory_uri() . '/assets/js/owl.theme.default.min.css', // this is the location of your script file
-        array('jquery') // this array lists the scripts upon which your script depends
-    );
-	wp_enqueue_style(
-        'animate.min', // name your script so that you can attach other scripts and de-register, etc.
-        get_stylesheet_directory_uri() . '/assets/js/animate.min.css', // this is the location of your script file
-        array('jquery') // this array lists the scripts upon which your script depends
-    );*/
+        'owl.theme.default.min', get_stylesheet_directory_uri() . '/assets/js/owl.theme.default.min.css');
+	wp_enqueue_style('animate.min', get_stylesheet_directory_uri() . '/assets/js/animate.min.css');
+	wp_enqueue_style('portafolioc', get_stylesheet_directory_uri() . '/assets/css/portafolioc.css');
 	
 }
 ?>

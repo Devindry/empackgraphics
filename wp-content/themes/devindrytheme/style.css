@@ -351,5 +351,93 @@ section > div > div:first-child{padding-top:90px}
     font-weight: bold;
 }
 
+/* Portafolio */
+.portadolio-stamp{	
+	width: 141px;
+	height: 133px;
+	background: url('assets/portafolio.png');
+	position: relative;
+	z-index: 9999;
+	left: 7%;
+	float:left;
+}
+
+/* The filters styles */
+.-filters{
+	position: relative;
+	right: 10%;
+	z-index: 99999;
+	top:20%;
+}
+.-filters a{
+	height: 90px;
+  	width: 90px;
+  	display: block;
+  	text-indent: -99999px;
+  	background-size: 100%;
+  	background-color: blue;
+  	border-radius:100%;
+  	margin-bottom:10px;
+  	background-position: -1px 4px;
+}
+/* Sericios Icons */
+ .-filters{display:none !important}
+.-filters a:first-child {
+  	display: none  
+}
+.-filters a:nth-child(2){
+  background: url('assets/servicio1.png');
+  background-position: -1px 4px; 
+  background-repeat: no-repeat;
+}
+.-filters a:nth-child(2):hover,
+.-filters a:nth-child(3):hover,
+.-filters a:nth-child(4):hover,
+.-filters a:nth-child(5):hover,
+.-filters a:nth-child(6):hover,
+.-filters a.-filter.active{
+	background-position: 0px -105px;
+	  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+.-filters a:nth-child(3){
+  background: url('assets/servicio2.png');
+  background-position: -1px 4px; 
+  background-repeat: no-repeat;
+}
+.-filters a:nth-child(4){
+  background: url('assets/servicio3.png');
+  background-position: -1px 4px; 
+  background-repeat: no-repeat;
+}
+.-filters a:nth-child(5){
+	background: url('assets/servicio5.png');  
+}
+.-filters a:nth-child(6){
+	background: url('assets/servicio6.png');  
+}
+.-filters a:nth-child(7){
+	background: url('assets/servicio7.png');  
+}
+.-filters a:nth-child(8){
+	background: url('assets/servicio8.png');  
+}
+
+/* PORTAFOLIO DETAIL  OK */
+.y-triangle{
+	background: url('assets/yellow-triangle-1.jpg');
+	background-repeat: no-repeat;
+}
+#content .flex-control-paging li a.flex-next,
+#content .flex-control-paging li a.flex-prev{
+	background-image: url('assets/arrow-right.png') !important;
+}
+#content .flex-control-paging li a.flex-next{
+	background-image: url('assets/arrow-left.png') !important;
+}
+
+/* PORTAFOLIO DETAIL  OK */
 
 
