@@ -11,6 +11,7 @@ function blogThumb( $sizes ) {
 add_action( 'wp_enqueue_scripts', 'add_my_script' );
 /* Funcion para agregar el script jquery en servicios */
 function add_my_script() {
+	wp_enqueue_script('changeMenu', get_stylesheet_directory_uri() . '/assets/js/changeMenu.js');
 	wp_enqueue_script('portafolio', get_stylesheet_directory_uri() . '/assets/js/portafolio.js', false, '1.0', true);
 	wp_enqueue_script('hideSections', get_stylesheet_directory_uri() . '/assets/js/hideSections.js');
 	wp_enqueue_script('jqSelectServiciosSliding', get_stylesheet_directory_uri() . '/assets/js/jqSelectServiciosSliding.js');
