@@ -90,6 +90,7 @@ margin: 0;
 	margin: 0 auto;		
 }
 /* TEMPLETE STYLES */
+.owl-item.active, .owl-stage{}
 .owl-stage-outer .owl-item .-item{
 	width: 50%;
 	height:280px;

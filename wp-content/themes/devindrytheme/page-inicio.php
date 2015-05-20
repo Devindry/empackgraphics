@@ -105,7 +105,9 @@ get_header('p');?>
 						<div class="autor">Por:<?php the_author(); ?></div>
 						<div class="body-post-container">
 							<div class="titulo-imagen"><?php the_post_thumbnail('blog-titulo'); ?></div>
-							<?php the_content(); ?>	
+							<div class="post-texto">
+								<?php the_content(); ?>	
+							</div>
 						</div>
 						<a class="mas-posts-blog" href="<?php echo home_url(); ?>/?page_id=12">
 							<table class="table">
